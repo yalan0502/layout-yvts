@@ -1,0 +1,36 @@
+
+ * {
+            font-family: 'Nixie One';
+            box-sizing: border-box;
+        }
+        /*        css重製*/
+        
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        /*        設定浮動*/
+        /*
+        .clearfix::after {
+            content="" ;
+            display: block;
+            clear: both ;
+        }
+*/
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .full-width {
+            width: 100%;
+        }
