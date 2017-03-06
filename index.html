@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-family: 'Nixie One';
+            box-sizing: border-box;
+        }
+        /*        css重製*/
+        
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        /*        設定浮動*/
+        /*
+        .clearfix::after {
+            content="" ;
+            display: block;
+            clear: both ;
+        }
+*/
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .full-width {
+            width: 100%;
+        }
+        
+        .fixed-width {
+            width: 1200px;
+            margin: auto;
+        }
+        
+        .col-3 {
+            float: left;
+            width: 380px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .col-4 {
+            float: left;
+            width: 280px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        nav {
+            height: 45px;
+            background-color: black;
+        }
+        
+        nav .logo {
+            float: left;
+            line-height: 45px;
+            color: aliceblue;
+        }
+        
+        nav .menu {
+            float: right;
+        }
+        
+        nav .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav .menu li {
+            float: left;
+            list-style: none;
+        }
+        
+        nav .menu a {
+            color: aliceblue;
+            text-decoration: none;
+            display: block;
+            line-height: 45px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 14px;
+            transition: all .3s;
+        }
+        
+        nav .menu a:hover {
+            background-color: #acacac;
+        }
+        
+        header {
+            height: 600px;
+            background-image: url(10.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: table;
+        }
+        /*        覆蓋*/
+        
+        header .overlay {
+            height: 750px;
+            display: table-cell;
+            vertical-align: middle;
+            background-color: rgba(51, 51, 51, 0.27);
+        }
+        
+        header .content {
+            margin: auto;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        header .content h1 {
+            font-size: 120px;
+        }
+        
+        header .content a {
+            display: inline-block;
+            width: 160px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: rgba(252, 252, 57, 0.56);
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+        #about {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+        }
+        
+        #about h2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        #about .col-3 {
+            padding-top: 70px;
+        }
+        
+        #about .col-3 h3 {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+        #about .col-3 p {
+            line-height: 30px;
+            /*            降低文字透明度*/
+            opacity: .8;
+        }
+        /*        icon改色*/
+        
+        .icon {
+            color: firebrick;
+        }
+        
+        #works {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            background-color: black;
+        }
+        
+        #works .col-3 {
+            height: 380px;
+            /*            background-color: aqua;*/
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #works h2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: aliceblue;
+        }
+        
+        #works p {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: aliceblue;
+        }
+        
+        #works img {
+            height: 380px;
+            width: inherit;
+        }
+        
+        #service {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            background-color: rgba(199, 195, 195, 0.41);
+            color: black;
+        }
+        
+        #service .col-4 {
+            height: 380px;
+            /*            background-color: aqua;*/
+            /*            background-size: cover; */
+        }
+        
+        #service img {
+            height: 380px;
+            width: inherit;
+        }
+        
+        #service h2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        #service p {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            opacity: .8;
+        }
+        
+        #service .icon {
+            color: black;
+        }
+        
+        footer {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: black;
+            color: aliceblue;
+        }
+        
+        footer a {
+            color: aquamarine;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        
+        footer .copyleft {
+            float: left;
+        }
+        
+        footer .sns {
+            float: right;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="full-width">
+        <div class="fixed-width">
+            <div class="logo">logo</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">works</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <header class="full-width ">
+        <div class="overlay">
+            <div class="content">
+                <h1>Design</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sequi,
+                    <br> minima necessitatibus et vero quidem, obcaecati explicabo assumenda, fugit, aperiam nulla earum voluptates natus animi esse
+                    <br>dicta praesentium. Rem, voluptas.</p>
+                <a href="#">start</a>
+            </div>
+        </div>
+    </header>
+    <div id="about" class="full-width clearfix">
+        <div class="fixed-width">
+            <!--        消除浮動-->
+            <h2>about us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facere, minima, sunt laborum, quibusdam in hic saepe voluptatem fugit numquam mollitia! Quisquam consectetur neque nulla soluta illum obcaecati voluptas, repudiandae.</p>
+
+            <div class="col-3 ">
+                <div class="icon"><span class="fa fa-address-book fa-5x"></span></div>
+                <h3>qwert</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet aliquid odit error dignissimos voluptas illo eos amet delectus consectetur, incidunt, eligendi, neque molestias quidem ducimus a laboriosam beatae nemo.</p>
+            </div>
+            <div class="col-3 ">
+                <div class="icon"><span class="fa fa-lightbulb-o fa-5x"></span></div>
+                <h3>qwert</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet aliquid odit error dignissimos voluptas illo eos amet delectus consectetur, incidunt, eligendi, neque molestias quidem ducimus a laboriosam beatae nemo.</p>
+            </div>
+            <div class="col-3 ">
+                <div class="icon"><span class="fa fa-hand-paper-o fa-5x"></span></div>
+                <h3>qwert</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet aliquid odit error dignissimos voluptas illo eos amet delectus consectetur, incidunt, eligendi, neque molestias quidem ducimus a laboriosam beatae nemo.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="works" class="full-width clearfix">
+        <div class="fixed-width">
+            <!--                    消除浮動-->
+            <h2>about us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facere, minima, sunt laborum, quibusdam in hic saepe voluptatem fugit numquam mollitia! Quisquam consectetur neque nulla soluta illum obcaecati voluptas, repudiandae.</p>
+
+            <div class="col-3">
+                <img src="01.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="02.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="03.jpg" alt="">
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="service" class="full-width clearfix">
+        <div class="fixed-width">
+            <!--                    消除浮動-->
+            <h2>service</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facere, minima, sunt laborum, quibusdam in hic saepe voluptatem fugit numquam mollitia! Quisquam consectetur neque nulla soluta illum obcaecati voluptas, repudiandae.</p>
+
+            <div class="col-4">
+                <img src="12.jpg" alt="">
+                <h3>qwert</h3>
+                <h2>ceo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet aliquid odit error dignissimos voluptas illo eos amet delectus consectetur, incidunt, eligendi, neque molestias quidem ducimus a laboriosam beatae nemo.</p>
+                <div class="icon">
+                    <span class="fa fa-instagram fa-2x"></span>
+                    <span class="fa fa-thumbs-o-up fa-2x"></span>
+                    <span class="fa fa-facebook-square fa-2x"></span>
+                    <span class="fa fa-twitter fa-2x"></span>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="13.jpg" alt="">
+                <h3>qwert</h3>
+                <h2>ceo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet aliquid odit error dignissimos voluptas illo eos amet delectus consectetur, incidunt, eligendi, neque molestias quidem ducimus a laboriosam beatae nemo.</p>
+                <div class="icon"><span class="fa fa-instagram fa-2x"></span>
+                    <span class="fa fa-thumbs-o-up fa-2x"></span>
+                    <span class="fa fa-facebook-square fa-2x"></span>
+                    <span class="fa fa-twitter fa-2x"></span></div>
+            </div>
+            <div class="col-4">
+                <img src="14.jpg" alt="">
+                <h3>qwert</h3>
+                <h2>ceo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet aliquid odit error dignissimos voluptas illo eos amet delectus consectetur, incidunt, eligendi, neque molestias quidem ducimus a laboriosam beatae nemo.</p>
+                <div class="icon"><span class="fa fa-instagram fa-2x"></span>
+                    <span class="fa fa-thumbs-o-up fa-2x"></span>
+                    <span class="fa fa-facebook-square fa-2x"></span>
+                    <span class="fa fa-twitter fa-2x"></span></div>
+            </div>
+            <div class="col-4">
+                <img src="15.jpg" alt="">
+                <h3>qwert</h3>
+                <h2>ceo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet aliquid odit error dignissimos voluptas illo eos amet delectus consectetur, incidunt, eligendi, neque molestias quidem ducimus a laboriosam beatae nemo.</p>
+                <div class="icon"><span class="fa fa-instagram fa-2x"></span>
+                    <span class="fa fa-thumbs-o-up fa-2x"></span>
+                    <span class="fa fa-facebook-square fa-2x"></span>
+                    <span class="fa fa-twitter fa-2x"></span></div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="full-width">
+        <div class="fixed-width">
+            <div class="copyright">
+                03-06 &copy;2017
+            </div>
+            <div class="sns">
+                <span class="fa fa-thumbs-o-up fa-2x"></span>
+                <span class="fa fa-facebook-square fa-2x"></span>
+                <span class="fa fa-twitter fa-2x"></span></div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
